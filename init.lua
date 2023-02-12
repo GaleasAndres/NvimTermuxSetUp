@@ -46,7 +46,6 @@ require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter-textobjects',
     after = 'nvim-treesitter',
   }
-
   use {
 	  "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
@@ -115,6 +114,8 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
+
+-- Dashboard
 
 -- Set highlight on search
 vim.o.hlsearch = false
